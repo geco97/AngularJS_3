@@ -200,20 +200,17 @@ ul, i, strong, span {
     border-radius: 50px;
     border: 1px solid #999ea5;
     height: 35px;
-    width: 187px;
-    display: inline-block;
 }
 
 #search-part input {
     border: none;
     height: 31px;
     font-size: 12px;
-    width: 65%;
-    margin-left: 15px;
+    width: 110px;
 }
 
 #search-part i {
-    padding-top: 7px;
+    padding-top: 0;
     font-size: 13px;
     border: none;
     background: #ffffff;
@@ -249,8 +246,8 @@ ul, i, strong, span {
 }
 
 #footer {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     background-repeat: no-repeat;
     height: auto;
 }
@@ -372,11 +369,6 @@ ul, i, strong, span {
     color: #aaa;
 }
 
-#stars {
-    text-align: right;
-    position: flex;
-}
-
 #backToTop {
     background: #15ee90;
     border-radius: 20px;
@@ -401,6 +393,35 @@ ul, i, strong, span {
     color: #fda483;
     font-size: 9px;
     margin: 0%;
+}
+
+ 
+.stars-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.stars-inner {
+    position: absolute;
+    top:0;
+    left:0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    color: #ccc;
+    font-weight: 900;
+}
+
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    color: #fda483;
+    font-weight: 900;
 }
 #numberOfPro{
     display: inline-block;

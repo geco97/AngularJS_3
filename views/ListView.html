@@ -17,12 +17,9 @@
                                 <td><h5 class="list-title">{{ item.productname }}</h5></td>
                                 <td><span
                                     class="list-text">{{ item.price }}.00 kr</span></td>
-                                <td><div id="list-stars">
-                                        <span ng-repeat=" arr in item.rating "
-                                            style="display:inline-flex;">
-                                            <i class="fas fa-star">{{arr.j}}</i>
-                                        </span>
-                                    </div></td>
+                                <td><div class="stars-outer">
+                                    <div class="stars-inner" ng-style="{ 'width': rating(item.rating) }"></div>
+                                </div></td>
                             </tr>
                         </tbody>   
                     </table>

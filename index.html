@@ -21,7 +21,7 @@
 
 <body ng-app="angularApp" ng-controller="userController">
     <div id="topBarMain">
-        <div id="TopBar" class="container-fluid col-md-9 ">
+        <div id="TopBar" class="container">
             <div class="row">
                 <div class="col-md-2" style="min-width: 180px;">
                     <ul>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid col-md-9 p-0">
+    <div class="container p-0">
         <header class="headerside container-fluid">
             <div id="header-dicoration" class="row">
                 <div id="logo" class="col-md-2 p-0 m-0">
@@ -93,8 +93,8 @@
             </div>
         </header>
     </div>
-    <div class="row m-0" id="firstpart" style="background-image:url('Media/bg1.jpg') ">
-        <div class="container-fluid col-md-9">
+    <div class="container-fluid m-0" id="firstpart" style="background-image:url('Media/bg1.jpg') ">
+        <div class="container">
             <p>DIGITAL MARKETING</p>
             <h1>Product Store</h1>
             <div>
@@ -106,8 +106,8 @@
             </div>
         </div>
     </div> 
-    <div class="container-fluid  col-md-8 p-0" style="margin-top: 120px;">
-        <div class="container-fluid wrap-first-box col-md-12 row">
+    <div class="container p-0" style="margin-top: 120px;">
+        <div class="container wrap-first-box col-md-12 row">
 
             <div class="col-md-3 wrap-first-box-parts">
                 <div><i> <a href=""><img src="Media/icon1.png" alt=""></a></i></div>
@@ -144,26 +144,25 @@
                     <div class="col-md-6"><a href="#!ListView"><i class="fas fa-bars" id="listV" ></i></a></div>
                 </div>
                 <div class="col-md-10 row" style="text-align: right">
-                    <div class="col-md-8" id="showing-line">
+                    <div class="col-md-7" id="showing-line">
                         <span class="text-dark">Showing</span>
                         <select ng-model="rowLimits" ng-options="rowLimitArra.id as rowLimitArra.name for rowLimitArra in rowLimitArr ">
                            
                         </select>
                         <span  class="text-dark">of 30 results</span>
                     </div>
-                    <div class="col-md-4" id="sort-part">
+                    <div class="col-md-2" id="sort-part">
                          <select class="dropdown" id="sortby" ng-model="sortColumn"  name="selectSort">
                                 <option value="" disabled selected>Sort by</option> 
                                 <option value="productname">Produkt</option>
                                 <option value="rating">rating</option>
                                 <option value="price">Pris</option>
                             </select>
-                    
-                        <div class="input-group"  id="search-part">
+                    </div>
+                        <div class="input-group col-md-3"  id="search-part">
                             <input id="search" type="search" placeholder="Search from here" ng-model='searchText'>
                             <span class="input-group-addon"><i class="fas fa-search"></i></span>
                         </div>
-                    </div>
                 </div>
             
             
@@ -175,9 +174,8 @@
         
 
     </div>
-    <footer class="row m-0" style="background-image:url('Media/20_shop.jpg') ">
-        <div class="col-md-2 p-0"></div>
-        <div id="footer" class="col-md-8 p-0">
+    <footer class="container-fluid m-0" style="background-image:url('Media/20_shop.jpg') ">
+        <div id="footer" class="container">
             <div id="footer-in">
                 <div id="footer-in-first-line" class="row">
                     <div id="footer-in-logogroup" class="col-md-4 p-0 m-0">
